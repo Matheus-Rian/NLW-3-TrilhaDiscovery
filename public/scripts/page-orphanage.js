@@ -30,5 +30,20 @@ L
 /*image gallery*/
 
 function selectImage(event) {
+    const button = event.currentTarget
 
+    //Remover todas as classes .active
+    const buttons = document.querySelectorAll(".images button")
+    buttons.forEach((button) => {
+        button.classList.remove("active")
+    })
+    //Selecionar a image clicada
+    const image = button.children[0]
+    const imageContainer = document.querySelector(".orphanage-details > img")
+
+    //Atualizar o container de Image
+    imageContainer.src = image.src
+
+    //Adicionar a classe .active para o botão clicado
+    button.classList.add("active")
 }
