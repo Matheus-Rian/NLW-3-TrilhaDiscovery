@@ -1,2 +1,2 @@
-# NLW#3-TrilhaDiscovery
+# NLW#3-TrilhaDiscoveryFront-End
  Fazendo uma aplicação web do zero. 
